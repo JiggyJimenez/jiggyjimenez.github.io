@@ -1,0 +1,219 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #123456;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#about {
+    text-align: center;
+    padding: 2rem;
+    animation: fadeIn 2s ease;
+}
+
+/* Basic Reset and Body Styling */
+/* ... (same as before) ... */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.profile-pic-container {
+    flex: 1;
+    position: relative;
+    padding-right: 20px; /* Space between image and text */
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.profile-pic-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px; /* Width of the translucent edge */
+    background: linear-gradient(to left, rgba(255,255,255,0.5), transparent);
+}
+
+.about-text {
+    flex: 1;
+    padding-left: 20px; /* Space between image and text */
+    animation: slideInFromRight 1s ease-out;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 3em; /* Larger icons */
+    margin-top: 20px;
+    animation: popIn 1s ease-in-out;
+}
+
+.contact-info a {
+    margin: 0 15px;
+    color: #123456;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff6600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 3em; /* Adjust the size as needed */
+    margin-bottom: 0em; /* Adds some space above the paragraph */
+}
+
+h2	 {
+    font-size: 0.75em; /* Smaller font size for the paragraph */
+    margin-bottom: 1em; /* Adds some space above the paragraph */
+}
+
+.project h3 {
+    text-align: center;
+    /* other styles for h3 can go here */
+}
+
+h4 {
+    font-size: 3em; /* Adjust the size as needed */
+    margin-left: 1em; /* Adds some space above the paragraph */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 1em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.project {
+    background-color: #f0f2f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.project p {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    /* Other styling for the footer */
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px; /* Adjust as needed */
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Additional styling as needed */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+	
+
+/* Nav and Other Styles */
+/* ... (same as before) ... */
+	
