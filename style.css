@@ -49,6 +49,31 @@ img {
     height: auto;
 }
 
+@media screen and (orientation: portrait) {
+    /* Adjust styles for portrait mode */
+    .profile-pic {
+        width: 80%; /* Adjust the width of your profile picture */
+    }
+    .about-text, .project {
+        padding: 10px; /* Add some padding for text and project containers */
+    }
+    /* Other adjustments as needed */
+}
+
+@media screen and (max-width: 600px) {
+    h1, h2, h3 {
+        font-size: smaller; /* Adjust the font size */
+    }
+    /* Other font size adjustments */
+}
+
+@media screen and (max-width: 600px) {
+    .profile-pic {
+        width: 100%; /* Make the image take full width */
+    }
+    /* Adjust other images if necessary */
+}
+
 @media screen and (max-width: 600px) {
     /* Styles for screens smaller than 600px */
     .profile-pic {
