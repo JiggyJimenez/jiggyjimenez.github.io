@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Basic Reset */
 * {
     margin: 0;
@@ -44,6 +43,19 @@ nav a {
 
 /* Basic Reset and Body Styling */
 /* ... (same as before) ... */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px */
+    .profile-pic {
+        width: 50%; /* Example: making the profile picture larger on small screens */
+    }
+    /* Add more styles as needed */
+}
 
 .about-container {
     display: flex;
